@@ -1,0 +1,89 @@
+﻿html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Calibri;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #000000;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+}
+
+#_containerReadyOrders {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    float: left;
+    background: #B7EFB4;        
+}
+
+#_containerReadyOrders div {
+
+    border: 1px solid black;
+    width: auto;
+    float: left;
+    margin: 1px;
+    padding: 2px 4px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#_containerOnProcessOrders {
+    width: 100%;
+    height: 100%;
+}
+
+#_containerServeLeft, #_containerServeRight {
+    float: left;
+    width: 49.5%;
+    height: 100%;
+    margin-left: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+#_containerServeRight { float: right; }
+
+.new_table {
+    margin: 0;
+    padding: 0;
+    border-color: #D4D1D1 !important;
+    border-collapse: collapse;
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.new_table td {
+    margin: 0;
+    padding: 0 5px;
+    border-color: #D4D1D1 !important;
+    color: #004080;
+}
+
+.new_table th {
+    background-color: #000000;
+    color: #fff301;
+    border-color: #636161 !important;
+    font-size: 12px;
+}
+
+.highlight td { background: #FFDDDD !important; }
+
+.isReady td { background: #B7EFB4 !important; }
+
+.qty { color: #D56A00; }
+
+.item { padding: 3px; }
+
+.nowrap { white-space: nowrap; }

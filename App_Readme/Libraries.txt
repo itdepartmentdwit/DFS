@@ -1,0 +1,8 @@
+﻿MSCaptcha - http://kirsanov.net/file.axd?file=2013%2f2%2fmscaptcha4.rar
+ReCaptcha - http://recaptchanet.codeplex.com/SourceControl/latest
+
+Dependency Injection
+http://stackoverflow.com/questions/4933695/how-can-i-implement-ninject-or-di-on-asp-net-web-forms
+http://codetunnel.com/blog/post/how-to-implement-proper-separation-of-concerns-in-your-web-forms-application
+http://stackoverflow.com/questions/10577615/how-to-inject-dependencies-in-an-httpmodule-with-a-ninjecthttpapplication-no-nu
+http://haacked.com/archive/2011/06/02/dependency-injection-with-asp-net-httpmodules.aspx

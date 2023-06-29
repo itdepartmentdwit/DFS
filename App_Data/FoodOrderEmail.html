@@ -1,0 +1,26 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <body>
+        <div style="color: Black !important;">
+            <p>Dear <strong><%UserFullName%></strong>,</p>
+            <p>
+                Canteen Manager has ordered following item on your behalf: <br /><br />
+                <strong>Item Name: </strong> <%FoodName%><br />
+                <strong>Quantity: </strong> <%quantity%><br />
+                <strong>Price: </strong> <%FoodPrice%>
+            </p>
+            <p>
+                Approve or Deny this order by clicking on this link below.<br />
+                <a href="<%AcceptUrl%>">Accept</a> <a href="<%DeclineUrl%>">Deny</a>
+            </p>
+            <p>
+                <font size="2"><b>Deerwalk Foods System</b></font>
+                <br />
+                <a target="_blank" href="http://system.deerwalkfoods.com/">http://system.deerwalkfoods.com/</a>
+                <br />
+                <br />
+                <i>Please do not reply to this mail.</i>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+﻿.DateSelectorContainer { width: auto; }
+
+.DtSelContFirstCol { width: 110px; }
+
+.DtSelContSecondCol { width: 80px; }
+
+.DtSelContThirdCol { width: 120px; }
+
+.DtSelContFourthCol { width: 80px; }
+
+.DtSelContFifthCol { width: 100px; }
+
+.DateSelectorContainer td { border-right: 0; }
+
+.DateSelectorContainer tr:hover td { background: none; }
+
+.DateSelectorContainer input[type=text] { width: 70px; }

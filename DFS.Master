@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DFS.master.cs" Inherits="DFS.Web.DFS" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="~/UserControls/MainMenuUserControl.ascx" TagPrefix="muc" TagName="MainMenuUserControl" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%= Page.Title %> - Deerwalk Foods System</title>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/scripts") %>
+        <%: Styles.Render("~/Content/css") %>
+    </asp:PlaceHolder>
+
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="masterBody">
+    <div class="wrapper">
+        <form id="form1" runat="server" enctype="multipart/form-data" style="min-height: 550px;"
+            autocomplete="true">
+            <div class="header">
+                <div class="logo">
+                    <asp:LinkButton ID="lnkbtn_logo" runat="server" OnClick="lnkbtn_logo_Click" CssClass="logo" CausesValidation="false" />
+                </div>
+                <div class="header_right">
+                    <div class="user_name">
+                        <div style="float: right">
+                            <ul style="float: left;">
+                                <li id="Avatar">
+                                    <asp:LinkButton ID="lnkUserImage" rel="lightbox" runat="server" CausesValidation="false">
+                                        <asp:Image ID="imgUserThumbnail" runat="server" CssClass="profile-pic" />
+                                    </asp:LinkButton>
+
+
+                                </li>
+                            </ul>
+                            <div class="avatarInfoWrap">
+                                <asp:Label ID="lblUsername" runat="server" CssClass="profile-name"></asp:Label>
+                                <asp:Label ID="lblEmpId" runat="server" CssClass="profile-empId"></asp:Label>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <asp:Label ID="lblCurrentDateTime" runat="server"></asp:Label>&nbsp;&nbsp; <span
+                            id="clock" style="color: #EA8A00">&nbsp;</span>
+                    </div>
+                    <div style="clear: both;">
+                    </div>
+                </div>
+                <div style="clear: both;">
+                </div>
+            </div>
+            <muc:MainMenuUserControl runat="server" ID="MainMenuUserControl" />
+            <div class="content">
+                <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+                </asp:ScriptManager>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div id="Notifications">
+                    <asp:HiddenField ID="hfPopup" runat="server" />
+                    <asp:ModalPopupExtender ID="mpeNotifyPopup" runat="server" TargetControlID="hfPopup"
+                        Drag="false" RepositionMode="RepositionOnWindowResizeAndScroll" PopupControlID="pnlLstNotifications"
+                        BehaviorID="mpeNotifyPopup" BackgroundCssClass="modalBackground">
+                    </asp:ModalPopupExtender>
+                    <asp:Panel ID="pnlLstNotifications" runat="server" CssClass="modalPopup "
+                        GroupingText="Notifications" Style="display: none; width: auto; height: 300px; overflow: scroll;">
+                        <div id="Scrollbar">
+                            <asp:GridView ID="gvNotifications" runat="server" AutoGenerateColumns="false" ShowHeader="false"
+                                CssClass="NoBorder">
+                                <Columns>
+                                    <asp:TemplateField>
+                                        <ItemTemplate>
+                                            <div class="NBorder">
+                                                <ul>
+                                                    <li class='NHeader'><span>
+                                                        <asp:Label ID="lblTitle" runat="server" Text='<%#Eval("Title") %>'></asp:Label>
+                                                    </span></li>
+                                                    <li class='Nbody'>
+                                                        <div style="width: 500px;">
+                                                            <span class="wordBreak">
+                                                                <asp:Label ID="lblMsg" runat="server" Text='<%#Eval("MessageText") %>'></asp:Label>
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField Visible="false">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblNotification" runat="server" Text='<%#Eval("NotificationId") %>'>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                </Columns>
+                            </asp:GridView>
+                        </div>
+                        <br />
+                        <asp:Button ID="btnOk" runat="server" Text="Ok" CssClass="btn" OnClick="btnOk_Click" />
+                    </asp:Panel>
+                </div>
+            </div>
+        </form>
+        <div class="footer">
+            <asp:Label ID="lblFooter" runat="server"></asp:Label>
+        </div>
+    </div>
+</body>
+</html>

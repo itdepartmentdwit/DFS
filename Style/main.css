@@ -1,0 +1,114 @@
+﻿/* CSS Document */
+body{font-family:Arial, Helvetica, sans-serif; font-size:14px; background:#ededed; color:#5a5858;}
+header, nav, main, footer{display:block;}
+#header{background:#fff; height:100px;}
+#nav{}
+#main{ margin:15px 0 25px 0;}
+#footer{background:#dedede; padding:10px 0; text-align:center; font-size:12px;}
+
+h1{font-size:28px; margin:0 0 15px 0; font-family:Tahoma, Geneva, sans-serif; font-weight:normal;}
+h2{font-size:24px; margin:0 0 15px 0; color:#b7660d; font-family:Tahoma, Geneva, sans-serif; font-weight:normal;}
+
+a{color:#c97d33;}
+a:focus{outline:none; text-decoration:none; color:#c97d33;}
+a:hover{color:#c97d33; text-decoration:underline;}
+
+.allTime, .breakfast, .lunch, .snacks, .dinner{ background-image:url(../images/dfs-icon-sprite.png); background-repeat:no-repeat; height:165px; line-height:285px; width:185px; display:block; background-color:none;}
+
+.dfsLogo{ margin:25px 0 0 0;}
+.userDetails{ font-weight:bold; color:#c97d33; text-align:right; margin:15px 0 0 0; height:38px; line-height:38px;}
+.userDetails img{ margin-right:5px;}
+ul.topMenu{ text-align:right;display:block; margin:10px 0 0 0; font-size:16px;}
+ul.topMenu li{list-style:none; display:inline-block; margin-left:25px;}
+ul.topMenu li a{display:block; padding:5px; border-bottom:4px solid #fff;}
+ul.topMenu li a:hover, ul.topMenu li a.active{border-bottom:4px solid #c97d33; text-decoration:none;}
+
+#nav{position:relative; width:70%; margin:0 auto 25px auto;}
+ul.mainNav{padding:0; text-align:center; display:block; font-size:16px; margin-top:15px;}
+ul.mainNav li{list-style:none; display:inline-block; margin:0; padding:0;}
+ul.mainNav li a:hover{ text-decoration:none; font-weight:bold;}
+
+ul.mainNav, span.first, span.last{background-image:url(../images/dfs-icon-sprite.png); background-repeat:no-repeat;}
+ul.mainNav li.first, ul.mainNav li.last{height:165px; line-height:285px; width:20px;}
+ul.mainNav{background-position: left -880px; background-repeat:repeat-x;}
+span.first{position:absolute; padding:5px 8px; left:0; top:73px; background-position:-60px -627px;}
+span.last{position:absolute; padding:5px 8px; right:0; top:73px; background-position:right -627px;}
+
+.allTime{ background-position:55px 55px;}
+.breakfast{ background-position:55px -75px;}
+.lunch{ background-position:55px -200px;}
+.snacks{ background-position:55px -330px;}
+.dinner{ background-position:55px -455px;}
+
+ul.mainNav li:hover, ul.mainNav li.active{
+background: rgba(255, 255, 255, 0.8);
+background: -moz-linear-gradient(top,  rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.8)), color-stop(100%,rgba(237, 237, 237, 0.8)));
+background: -webkit-linear-gradient(top,  rgba(255, 255, 255, 0.8) 0%,rgba(237, 237, 237, 0.8) 100%);
+background: -o-linear-gradient(top,  rgba(255, 255, 255, 0.8) 0%,rgba(237, 237, 237, 0.8) 100%);
+background: -ms-linear-gradient(top,  rgba(255, 255, 255, 0.8) 0%,rgba(237, 237, 237, 0.8) 100%);
+background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.8) 0%,rgba(237, 237, 237, 0.8) 100%);
+font-weight:bold;
+}
+
+.whiteBox{background:#fff; border-radius:5px; box-shadow:1px 3px 2px #ccc; margin-bottom:15px;}
+.grayBox{background:#f2f2f2; border-radius:5px; box-shadow:1px 3px 2px #ccc; margin-bottom:15px;}
+
+.currentTime{ background:#d5d3d3; text-align:center; padding:15px; font-family:Tahoma, Geneva, sans-serif; font-size:36px; border-radius:5px 5px 0 0; margin-bottom:15px;}
+.serveQueue{ margin-bottom:15px; padding:15px; min-height:800px;}
+.serveQueue h2{text-transform:uppercase;}
+ul.serveQueueList{margin:0; padding:0;}
+.serveQueueList li{list-style:none; display:inline-block; float:left; width:52px; padding:5px; background:#b7660d; margin:1px; text-align:center; font-size:24px; color:#fff;}
+.serveQueueList li.green{ background:#6eb144;}
+
+.itemBlock{padding:15px; margin-bottom:15px;}
+.itemRow{border-bottom:2px solid #fff; background:#e5e5e5;}
+.delivered{background:#f1f1f1;}
+.delivered p{ color:#a1a0a0 !important;}
+.itemName{color:#b7660d; font-size:18px;}
+.itemName p{padding:5px;}
+.itemName span{font-weight:normal; font-size:12px; color:#6f6e6e;}
+
+.itemPrice{color:#b7660d; font-size:18px;}
+.itemPrice p{padding:5px;}
+.itemPrice span{font-weight:normal; font-size:12px; color:#6f6e6e;}
+.itemPrice span.availableQty{font-size:18px; line-height:10px;}
+.itemCount{margin-top:15px;}
+.itemCount input{ width:43px; border:1px solid #ccc; padding-left:5px;}
+.serveMe{display:none;}
+
+.btns{text-align:right; margin-top:15px;}
+.btn-success {
+    background-image: linear-gradient(to bottom, #72c72b 0px, #70a301 100%);
+    background-repeat: repeat-x;
+    border-color: #70a301;
+	color: #FFF;
+    background-color: #70a301;
+	text-transform:uppercase;
+	transition: background-color 0.5s ease;
+}
+
+.btn-success:hover{ background-image: linear-gradient(to bottom, #70a301 0px, #70a301 100%);background-color: #70a301;}
+
+
+.foodCategories{ padding:15px;}
+ul.categoriesList{ padding:0; margin:0 0 25px 0; }
+ul.categoriesList li{list-style:none; margin-bottom:5px; display:block;}
+ul.categoriesList li.selectAll{margin-bottom:15px;}
+
+ul.categoriesList li a{background-image:url(../images/dfs-icon-sprite.png); background-repeat:no-repeat;background-position: left -713px; padding:5px 0 5px 25px; display:block;}
+ul.categoriesList li a:hover{font-weight:bold; text-decoration:none;}
+ul.categoriesList a.active{background-position:left -747px; text-decoration:none; font-weight:bold;}
+
+/* Fixers */
+.no-pad-left{ padding-left:0 !important;}
+
+@media (max-width: 1000px){
+#header{height:auto;}
+#nav{width:100%;}
+.allTime, .breakfast, .lunch, .snacks, .dinner{width:125px;}
+.serveQueue{min-height:inherit;}
+.itemRow{padding:10px;}	
+.no-pad-left{padding-left:15px !important;}
+	
+}

@@ -1,0 +1,40 @@
+﻿.dateAdded {
+    font-size: smaller;
+    font-style: italic;
+}
+
+.voteArrow {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.up {
+    background-repeat: no-repeat;
+    background-image: url('../Images/arrow-up.png');
+}
+
+.upvoted {
+    background-repeat: no-repeat;
+    background-image: url('../Images/arrow-up-selected.png');
+}
+
+.down {
+    background-repeat: no-repeat;
+    background-image: url('../Images/arrow-down.png');
+}
+
+.downvoted {
+    background-repeat: no-repeat;
+    background-image: url('../Images/arrow-down-selected.png');
+}
+
+.totalVotes {
+    text-align: left;
+    margin-left: 2px;
+    margin-top: -5px;
+    color: #5C3123;
+    font-weight: bold;
+}
+
+.negVot { margin-left: -1px !important; }
