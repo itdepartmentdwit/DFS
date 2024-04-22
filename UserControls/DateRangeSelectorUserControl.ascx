@@ -35,7 +35,7 @@
     <tr runat="server" id="nepaliYearMonthRow">
         <td class="DtSelContFirstCol"><b>Select Nepali Year</b></td>
         <td class="DtSelContSecondCol">
-            <asp:DropDownList runat="server" ID="ddNepaliYear" Width="120px"> <%--SelectMethod="GetNepaliYears"  --%>
+            <asp:DropDownList runat="server" ID="ddNepaliYear" Width="120px">
             </asp:DropDownList>
         </td>
         <td class="DtSelContThirdCol"><b>Select Nepali Month</b></td>
